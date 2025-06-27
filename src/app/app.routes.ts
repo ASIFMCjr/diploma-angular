@@ -1,19 +1,7 @@
 import { Routes } from '@angular/router';
-import { Login } from './login/login';
-import { Home } from './home/home';
+import { Login } from './pages/login/login';
+import { Home } from './pages/home/home';
 import { authGuard } from './auth-guard';
-
-// [
-//     index("pages/home/ui/home.tsx"),
-//     route("login", "pages/login/login.tsx"),
-//     layout("./pages/mainLayout.tsx", [
-//       route("users", "pages/users/index.tsx"),
-//       route("reports", "pages/reports/index.tsx"),
-//       route("dashboard", "pages/dashboard/index.tsx"),
-//       route("changes", "pages/changes/index.tsx"),
-//       route("stats", "pages/statistics/index.tsx")
-//     ]),
-//   ]
 
 // {
 //   path: 'admin',
@@ -40,33 +28,33 @@ export const routes: Routes = [
   {
     path: 'users',
     title: 'Пользователи',
-    loadComponent: () => import('./users/users').then((m) => m.Users),
+    loadComponent: () => import('./pages/users/users').then((m) => m.Users),
     canActivate: [authGuard],
   },
   {
     path: 'profile',
     title: 'Личный кабинет',
-    loadComponent: () => import('./profile/profile').then((m) => m.Profile),
+    loadComponent: () => import('./pages/profile/profile').then((m) => m.Profile),
     canActivate: [authGuard],
   },
   {
     path: 'changelog',
     title: 'Изменения',
     loadComponent: () =>
-      import('./changelog/changelog').then((m) => m.Changelog),
+      import('./pages/changelog/changelog').then((m) => m.Changelog),
     canActivate: [authGuard],
   },
   {
     path: 'reports',
     title: 'Отчеты',
-    loadComponent: () => import('./reports/reports').then((m) => m.Reports),
+    loadComponent: () => import('./pages/reports/reports').then((m) => m.Reports),
     canActivate: [authGuard],
   },
   {
     path: 'dashboard',
     title: 'Статистика',
     loadComponent: () =>
-      import('./statistics/statistics').then((m) => m.Statistics),
+      import('./pages/statistics/statistics').then((m) => m.Statistics),
     canActivate: [authGuard],
   },
   {

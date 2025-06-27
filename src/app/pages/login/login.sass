@@ -1,0 +1,41 @@
+.login-page
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 100vh
+  padding: 20px
+  background-color: #FFFFFF
+
+  &__container
+    width: 100%
+    max-width: 480px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__header
+    margin-bottom: 44px
+    text-align: center
+
+  &__form
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__input
+    margin-bottom: 24px
+
+  &__button
+    margin-top: 64px
+
+@media (max-width: 768px)
+  .login-page
+    &__header
+      margin-bottom: 32px
+
+    &__input
+      margin-bottom: 20px
+
+    &__button
+      margin-top: 48px
