@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@use './colors' as colors
+
 @font-face
   font-family: 'Century Gothic';
   src: url('../public/fonts/centurygothic.ttf')
@@ -11,8 +13,16 @@
   src: url("../public/fonts/centurygothic_bold.ttf")
   font-weight: bold
 
+:root
+  --main: #{colors.$accent-color}
+
+body
+  margin: 0
+  padding: 0
+
 body *
   font-family: 'Century Gothic'
+  box-sizing: border-box
 
 h1, h2, h3, h4, h5, h6
   font-weight: bold

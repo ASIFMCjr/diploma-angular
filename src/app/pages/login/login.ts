@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-login',
   imports: [],
   templateUrl: './login.html',
-  styleUrl: './login.sass'
+  styleUrls: ['./login.sass'],
 })
-export class Login {
-
-}
+export class Login {}

@@ -1,0 +1,82 @@
+.navigation 
+  left: 0
+  top: 0
+  height: 100vh
+  width: 82px
+  background: rgba(255, 118, 18, 0.06)
+  box-shadow: 0px 2px 6px rgba(255, 218, 191, 0.2)
+  display: flex
+  flex-direction: column
+  z-index: 100
+  &__top 
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+  
+  &__logo 
+    padding-top: 25px
+    display: flex
+    justify-content: center
+  
+  &__divider 
+    width: 66px
+    height: 2px
+    background: #ff7612
+    border-radius: 1px
+    margin: 25px 0
+  
+  &__links 
+    display: flex
+    flex-direction: column
+    gap: 30px
+    align-items: center
+  
+  &__link 
+    width: 24px
+    height: 24px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: none
+    border: none
+    cursor: pointer
+    padding: 0
+    svg 
+      width: 24px
+      height: 24px
+      path 
+        stroke: #292929;
+        transition: fill 0.2s ease
+      
+    
+    &_active 
+      color: #ffffff
+      position: relative
+      &::before 
+        content: ""
+        position: absolute
+        width: 36px
+        height: 36px
+        background: #ff7612
+        border-radius: 4px
+        box-shadow: 0px 2px 8px rgba(255, 118, 18, 0.36)
+        z-index: -1
+      
+      svg path 
+        stroke: #ffffff;
+      
+    
+  
+  &__account 
+    width: 44px
+    height: 44px
+    border-radius: 50%
+    background: #ffffff
+    color: #9c9c9c
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto 19px
+    font-weight: bold
+  
