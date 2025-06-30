@@ -1,44 +1,63 @@
 <nav class="navigation">
   <div class="navigation__top">
     <div class="navigation__logo">
-      <!-- <LogoMini /> -->
-      LogoMini
+      <img src="assets/logo.svg" width="100%" height="100%" />
     </div>
     <div class="navigation__divider"></div>
     <div class="navigation__links">
       <!-- class={`$navigation__link} ${activeTab === "" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("")} -->
-      <button>
-        <!-- <HomeIcon /> -->
-        HomeIcon
+      <button class="navigation__nav-button">
+        <svg>
+          <use
+            href="assets/nav-items/main.svg#home-reference"
+            class="navigation__icon"
+          />
+        </svg>
       </button>
 
       <!-- class={`$navigation__link} ${activeTab === "users" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("users")} -->
-      <button>
-        <!-- <UsersIcon /> -->
-        UsersIcon
+      <button class="navigation__nav-button">
+        <svg>
+          <use
+            href="assets/nav-items/profiles.svg#profiles-reference"
+            class="navigation__icon"
+          />
+        </svg>
       </button>
 
       <!-- class={`$navigation__link} ${activeTab === "reports" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("reports")} -->
-      <button>
-        <!-- <ReportsIcon /> -->
-        ReportsIcon
+      <button class="navigation__nav-button">
+        <svg>
+          <use
+            href="assets/nav-items/reports.svg#reports-reference"
+            class="navigation__icon"
+          />
+        </svg>
       </button>
 
       <!-- class={`$navigation__link} ${activeTab === "changes" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("changes")} -->
-      <button>
-        <!-- <ChangesIcon /> -->
-        ChangesIcon
+      <button class="navigation__nav-button">
+        <svg>
+          <use
+            href="assets/nav-items/changelog.svg#changelog-reference"
+            class="navigation__icon"
+          />
+        </svg>
       </button>
 
       <!-- class={`$navigation__link} ${activeTab === "stats" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("stats")} -->
-      <button>
-        <!-- <StatsIcon /> -->
-        StatsIcon
+      <button class="navigation__nav-button">
+        <svg>
+          <use
+            href="assets/nav-items/statistics.svg#statistics-reference"
+            class="navigation__icon"
+          />
+        </svg>
       </button>
     </div>
   </div>
