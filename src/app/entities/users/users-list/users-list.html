@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th scope="col">ФИО</th>
+      <th scope="col">Должность</th>
+      <th scope="col">Номер телефона</th>
+      <th scope="col">Дата регистрации</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of items; track item.name) {
+    <tr>
+      <th scope="row">Chris</th>
+      <td>HTML tables</td>
+      <td>22</td>
+      <td>05.06.2025</td>
+    </tr>
+    } @empty {
+    <div>There are no items.</div>
+    }
+  </tbody>
+</table>

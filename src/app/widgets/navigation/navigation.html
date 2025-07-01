@@ -7,58 +7,58 @@
     <div class="navigation__links">
       <!-- class={`$navigation__link} ${activeTab === "" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("")} -->
-      <button class="navigation__nav-button">
+      <a routerLink="/home" class="navigation__nav-button">
         <svg>
           <use
             href="assets/nav-items/main.svg#home-reference"
             class="navigation__icon"
           />
         </svg>
-      </button>
+      </a>
 
       <!-- class={`$navigation__link} ${activeTab === "users" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("users")} -->
-      <button class="navigation__nav-button">
+      <a routerLink="/users" class="navigation__nav-button">
         <svg>
           <use
             href="assets/nav-items/profiles.svg#profiles-reference"
             class="navigation__icon"
           />
         </svg>
-      </button>
+      </a>
 
       <!-- class={`$navigation__link} ${activeTab === "reports" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("reports")} -->
-      <button class="navigation__nav-button">
+      <a routerLink="/reports" class="navigation__nav-button">
         <svg>
           <use
             href="assets/nav-items/reports.svg#reports-reference"
             class="navigation__icon"
           />
         </svg>
-      </button>
+      </a>
 
       <!-- class={`$navigation__link} ${activeTab === "changes" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("changes")} -->
-      <button class="navigation__nav-button">
+      <a routerLink="/changelog" class="navigation__nav-button">
         <svg>
           <use
             href="assets/nav-items/changelog.svg#changelog-reference"
             class="navigation__icon"
           />
         </svg>
-      </button>
+      </a>
 
       <!-- class={`$navigation__link} ${activeTab === "stats" ? styles.navigation__link_active : ""}`}
         onClick={() => changeRoute("stats")} -->
-      <button class="navigation__nav-button">
+      <a routerLink="/statistics" class="navigation__nav-button">
         <svg>
           <use
             href="assets/nav-items/statistics.svg#statistics-reference"
             class="navigation__icon"
           />
         </svg>
-      </button>
+      </a>
     </div>
   </div>
   <div class="navigation__account">A</div>
